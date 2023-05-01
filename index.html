@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+      />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     <header>
+        <a href="#" class="logo">☾ BC</a>
+        <ul>
+            <li><a href="#" class="active">A propos</a></li>
+            <li><a href="index-1.html">Projets</a></li>
+            <li><a href="index-4.html">Veille technologique</a></li>
+            <li><a href="index-2.html">Contact</a></li>
+            
+        </ul>
+     </header>  
+     <section>
+        <img src="stars (1).png"id="stars">
+        <img src="moon.png"id="moon">
+        <img src="mountains_behind.png"id="mountains_behind">
+        <h2 id="text">hello !</h2>
+        <a href="#sec" id="btn">Explorer</a>
+        <img src="mountains_front.png"id="mountains_front">
+     </section>
+
+     <div class="sec" id="sec">
+       <!-- START WELCOME SECTION -->
+        <h1>Bienvenue tout le monde ! Je m'appelle Betul et je suis ravie de vous accueillir sur mon site !</h1>
+        <p>Depuis petite, l'informatique, les ordinateurs et les jeux vidéo m'ont fascinée, c'est pourquoi j'ai décidé de préparer le BTS SIO option SLAM (Solutions logicielles et applications métiers) avec le CNED de 2020 à 2022. <br>J’ai eu l'opportunité d’effectuer deux stages en milieu professionnel, le premier dans une agence de communication et le second dans une association.<br> Ces expériences m'ont permis de découvrir le monde du travail et le milieu associatif, elles m'ont aussi appris à travailler en autonomie et à gagner en confiance. </p>
+        <p><a href="https://www.dropbox.com/s/ilrhqdtjyjkcfnr/MON%20CV%20.pdf?dl=0" target="_blank">Vous pouvez consulter mon CV ici :</p></a>
+     <!-- END WELCOME SECTION -->
+     </div>
+      
+     <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+     </script>
+    </body>
+      <!-- START FOOTER SECTION -->
+
+      <footer>
+        <p>
+          Portfolio créé par Betul Colak
+        </p>
+      </footer>
+  
+      <!-- END FOOTER SECTION -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</html>
